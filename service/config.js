@@ -10,7 +10,7 @@ const defaultConfig = {
     database: 'sanbercode',
   },
   server: {
-    port: 80,
+    port: 7767,
   },
 };
 
