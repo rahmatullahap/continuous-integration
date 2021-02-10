@@ -27,10 +27,6 @@ describe('todos', () => {
   });
 
   describe('list', () => {
-    it('get list1', async () => {
-      const todos = await list();
-      expect(todos).toHaveLength(1);
-    });
     it('get list', async () => {
       const todos = await list();
       expect(todos).toHaveLength(1);
