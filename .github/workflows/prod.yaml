@@ -5,8 +5,8 @@ on:
     branches: [master]
 
 jobs:
-  build:
-    name: build
+  todo-service:
+    name: todo-service
     runs-on: ubuntu-latest
     env:
       BUILT_IMAGE: 'docker.pkg.github.com/${{ github.repository }}/continuous-integration:${{ github.sha }}'
