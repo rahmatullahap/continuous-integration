@@ -7,7 +7,7 @@ const defaultConfig = {
     port: 5432,
     username: 'postgres',
     password: 'postgres',
-    database: 'database',
+    database: 'sanbercode',
   },
   server: {
     port: 80,
