@@ -12,6 +12,9 @@ jobs:
     env:
       BUILT_IMAGE: 'docker.pkg.github.com/${{ github.repository }}/continuous-integration:${{ github.sha }}'
       POSTGRES_PASSWORD: postgres
+      todo_database_password: postgres
+      todo_database_database: sanbercode
+      todo_server_port: 7767
     services:
       postgres:
         image: postgres:11

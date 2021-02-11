@@ -6,11 +6,11 @@ const defaultConfig = {
     host: 'localhost',
     port: 5432,
     username: 'postgres',
-    password: 'postgres',
-    database: 'sanbercode',
+    password: '',
+    database: 'database',
   },
   server: {
-    port: 7767,
+    port: 80,
   },
 };
 
