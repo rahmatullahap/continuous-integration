@@ -12,8 +12,9 @@ jobs:
     env:
       BUILT_IMAGE: 'docker.pkg.github.com/${{ github.repository }}/continuous-integration:${{ github.sha }}'
       POSTGRES_PASSWORD: postgres
-      todo_database__password: postgres
-      todo_database__database: sanbercode
+      ## add secret on settings-secrets-add new e.g name=POSTGRES_PASSWORD value=postgres
+      todo_database__password: ${{ secrets.POSTGRES_PASSWORD }}
+      todo_database__database: ${{ secrets.POSTGRES_DB }}
       todo_server__port: 7767
     services:
       postgres:
